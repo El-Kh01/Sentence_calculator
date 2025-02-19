@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Калькулятор срока наказания</h1>
+    <form id="calc-form">
+        <label>Минимальный срок (в месяцах): <input type="number" id="min-term" required></label><br>
+        <label>Максимальный срок (в годах): <input type="number" id="max-term" required></label><br>
+        <label>Приготовление? <input type="checkbox" id="prep"></label><br>
+        <label>Покушение? <input type="checkbox" id="attempt"></label><br>
+        <label>Рецидив? <input type="checkbox" id="recidiv"></label><br>
+        <label>Досудебное соглашение? <input type="checkbox" id="agreement"></label><br>
+        <label>Вердикт присяжных? <input type="checkbox" id="jury"></label><br>
+        <button type="submit">Рассчитать</button>
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
